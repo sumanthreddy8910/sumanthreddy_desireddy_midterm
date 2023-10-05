@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;    
+}
+nav li{
+    flex: 1;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.einstein{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    border-radius: 20px;
+    margin: 10px;
+}
+.einstein img{
+    width: 300px;
+    height: 300px;
+}
+.einstein p{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#paperpublish{
+    text-align: center;
+    padding: 5px;
+    background-color: #51f0e8;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: auto;
+}
+#paper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.Paper img{
+    width: 250px;
+    height: 300px;
+}
+
+.hobbies {
+    display: grid;
+    background-color:#FFF68F;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.hobby {
+    display: flex;
+    background-color:#F0F8FF;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.hobby img {
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+}
+.hobby-info {
+    display: flex;
+    flex-direction: column; 
+}
+.hobbies h1 {
+    text-align: center;
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    grid-column: span 2;
+}
+.hobby p {
+    font-size: 16px;
+}
+
+.blogs{
+    background-color:#00B2EE;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.blogs h1{
+    text-align: center;
+}
+.blogs ul li {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 5px;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .einstein img {
+        width: 100%;
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .paperpublish {
+        background-color: #51f0e8;
+        padding: 10px;
+    }
+    #paper{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        gap: 10px;
+    }
+
+    .Paper img {
+        width: 150px;
+        height: 200px;
+    }
+
+    .hobbies {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .hobby {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hobby img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin:0px auto;
+    }
+
+    .hobby-info {
+        text-align: center;
+    }
+
+    .blogs ul li {
+        margin: 0;
+        padding: 5px;
+    }
+}
+
